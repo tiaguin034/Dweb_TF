@@ -1,0 +1,24 @@
+:root{
+  --brand: #0d6efd;
+}
+.hero-slide{
+  min-height: 60vh;
+}
+.feature-card .card-title{
+  font-weight: 700;
+}
+.navbar-brand{
+  letter-spacing:.2px;
+}
+.card .btn{
+  border-radius: 12px;
+}
+.modal-content{
+  border-radius: 16px;
+}
+footer{
+  background: #fff;
+}
+/* Helpers */
+.shadow-soft{ box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+.rounded-4{ border-radius: 1rem !important; }
