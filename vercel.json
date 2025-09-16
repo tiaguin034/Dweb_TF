@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/api/*.php",
-      "use": "@vercel/php"
-    },
-    {
       "src": "*.html",
       "use": "@vercel/static"
     },
