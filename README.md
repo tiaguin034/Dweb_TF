@@ -1,12 +1,16 @@
 # MedVet Connect
 
-Sistema web para adoção de animais e campanhas veterinárias, desenvolvido com PHP, MySQL e JavaScript.
+Sistema web para adoção de animais e campanhas veterinárias, hospedado no **Vercel** com banco de dados **Railway**.
 
-## Funcionalidades
+## 🚀 Deploy Online
+
+**URL**: [https://medvet-connect.vercel.app](https://medvet-connect.vercel.app)
+
+## ✨ Funcionalidades
 
 ### Área Pública
-- Página inicial com informações sobre o sistema
-- Página de login e cadastro de usuários
+- Página inicial responsiva
+- Sistema de login e cadastro
 - Listagem de animais para adoção com filtros
 - Listagem de campanhas e eventos
 - Mapa de clínicas e ONGs
@@ -17,34 +21,37 @@ Sistema web para adoção de animais e campanhas veterinárias, desenvolvido com
 - Edição de perfil e exclusão de conta
 - Sistema de busca AJAX
 
-## Requisitos
+## 🛠️ Tecnologias
 
-- PHP 7.4 ou superior
-- MySQL 5.7 ou superior
-- Servidor web (Apache/Nginx)
-- Extensões PHP: PDO, PDO_MySQL
+- **Frontend**: HTML5, CSS3, JavaScript (jQuery), Bootstrap 5
+- **Backend**: PHP 8+ com classes organizadas
+- **Banco de Dados**: MySQL (Railway)
+- **Hospedagem**: Vercel
+- **APIs**: REST com JSON
 
-## Instalação
+## 📋 Deploy Rápido
 
-1. **Clone ou baixe o projeto**
-   ```bash
-   git clone [url-do-repositorio]
-   cd medvet-connect
+### 1. Configurar Railway (Banco de Dados)
+1. Acesse [railway.app](https://railway.app)
+2. Crie um banco MySQL
+3. Execute o script `database_mysql.sql`
+4. Anote as credenciais
+
+### 2. Configurar Vercel (Hospedagem)
+1. Acesse [vercel.com](https://vercel.com)
+2. Importe este repositório
+3. Configure as variáveis de ambiente:
+   ```
+   DB_HOST = [host do Railway]
+   DB_NAME = [nome do banco]
+   DB_USER = [usuário]
+   DB_PASS = [senha]
    ```
 
-2. **Configure o banco de dados**
-   - Crie um banco de dados MySQL
-   - Execute o script `backend/sql/database.sql` para criar as tabelas
-   - Configure as credenciais em `backend/config/database.php`
-
-3. **Configure o servidor web**
-   - Coloque os arquivos em um diretório acessível pelo servidor web
-   - Certifique-se de que o PHP está configurado corretamente
-   - O arquivo `.htaccess` já está configurado para CORS
-
-4. **Acesse o sistema**
-   - Abra o navegador e acesse o diretório do projeto
-   - A página inicial será carregada automaticamente
+### 3. Deploy
+- O Vercel fará deploy automático
+- Acesse: `https://seuprojeto.vercel.app`
+- Teste: `https://seuprojeto.vercel.app/teste.php`
 
 ## Estrutura do Projeto
 
